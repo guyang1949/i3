@@ -81,7 +81,7 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id volumeicon
 
 # start zmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -bw 0
+bindsym $mod+d exec --no-startup-id rofi -show run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -opacity "65"
 
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 
