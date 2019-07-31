@@ -79,6 +79,8 @@ bindsym $mod+t exec --no-startup-id thunar
 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id volumeicon
+#bindsym $mod+Ctrl+s exec --no-startup-id ss-qt5
+exec_always --no-startup-id ss-qt5
 
 # start zmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -opacity "65"
@@ -120,7 +122,6 @@ bindsym $mod+h split h;exec notify-send 'tile horizontally'
 # split in vertical orientation
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 
-bindsym $mod+Ctrl+s exec --no-startup-id ss-qt5
 
 # split toggle
 bindsym $mod+Shift+q split toggle
