@@ -82,6 +82,8 @@ exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+s exec --no-startup-id ss-qt5
 exec --no-startup-id ss-qt5
 
+exec --no-startup-id ~/.screenlayout/mian.sh
+
 # start zmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -opacity "65"
 
