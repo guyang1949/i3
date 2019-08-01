@@ -104,7 +104,7 @@ def main():
         print(weather + " ", end="")
 
     # Print the temperature and sun times.
-    print(temperature, end="°C ")
+       # print(temperature, end="°C ")
 
     # Print the sun rise and set time.
     if rise_fall_available:
