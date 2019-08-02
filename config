@@ -87,7 +87,7 @@ exec --no-startup-id ~/.screenlayout/mian.sh
 # start zmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -opacity "65"
 
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+#bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Shift+d exec goldendict 
 
 bindsym Print exec --no-startup-id i3-scrot
@@ -130,7 +130,6 @@ bindsym $mod+h split h;exec notify-send 'tile horizontally'
 # split in vertical orientation
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 
-
 # split toggle
 bindsym $mod+Shift+q split toggle
 
@@ -169,16 +168,16 @@ bindsym $mod+Ctrl+Left workspace prev
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
 set $ws4 "4:"
-set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
-set $ws9 "9:"
-set $ws10 "10:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7:"
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -223,10 +222,11 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+     #   bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym l resize grow width 10 px pr 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
